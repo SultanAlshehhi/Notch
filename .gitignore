@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (Crucial to ignore)
+.venv/
+venv/
+env/
+
+# Distribution / Packaging (PyInstaller/setuptools artifacts)
+build/
+dist/
+*.spec
+
+# IDE settings (Optional but recommended)
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Large Models (Optional: Uncomment below if the 'model' folder contains files >100MB)
+model/
+
+notch_logo.ico
+notch_logo.PNG
+notch_small_256.ico
