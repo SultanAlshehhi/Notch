@@ -15,11 +15,10 @@
     <i>No Cloud. No API Keys. 100% Offline.</i>
   </p>
 
+   <!-- Auto-playing demo GIF -->
+![Notch Demo](assets/NotchDemo.gif)
+
 </div>
-
-
-
-https://github.com/user-attachments/assets/cd46c830-ba6a-4b6d-b5eb-5b983d67fc54
 
 
 
