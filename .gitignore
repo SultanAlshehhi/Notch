@@ -27,3 +27,7 @@ model/
 notch_logo.ico
 notch_logo.PNG
 notch_small_256.ico
+
+# Nix
+.direnv/
+result

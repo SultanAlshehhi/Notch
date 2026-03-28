@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Notch
+Comment=Offline desktop teleprompter
+Exec=@exec@ %U
+Icon=ae.socia.Notch
+Terminal=false
+Categories=Office;Utility;AudioVideo;
+StartupNotify=true
+StartupWMClass=Notch
+X-GNOME-WMClass=Notch

@@ -26,6 +26,7 @@ from PyQt5.QtWidgets import (
 
 # Assumed external dependencies based on your project structure
 from audio_worker import AudioWorker
+from config_store import resolve_model_path
 from matching_engine import MatchingEngine
 from settings_dialog import SettingsDialog
 
@@ -575,7 +576,7 @@ class NotchOverlay(QWidget):
     MIN_W, MIN_H = 300, 80
     COMPACT_W = 100   # ~2 word width with compact font
     COMPACT_FONT = 6  # smallest allowed text size
-    MODEL_PATH = "model"  # overridden in __init__ when running as frozen exe
+    MODEL_PATH = "model"  # resolved in __init__ for local, frozen, and XDG installs
 
     # Aesthetic Constants
     CORNER_RADIUS = 24      # Pill shape (lower = less curved)
@@ -584,12 +585,9 @@ class NotchOverlay(QWidget):
 
     def __init__(self):
         super().__init__()
-        # When packaged as exe, look for model next to the executable
+        self.MODEL_PATH = resolve_model_path()
         if getattr(sys, "frozen", False):
-            self.MODEL_PATH = os.path.join(os.path.dirname(sys.executable), "model")
             self._log_install_paths()
-        else:
-            self.MODEL_PATH = NotchOverlay.MODEL_PATH
 
         # ── State ────────────────────────────────────────────────────
         self._font_size = 10

@@ -24,6 +24,8 @@ from PyQt5.QtWidgets import QApplication
 from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt
 
+from config_store import APP_ID
+
 
 def main():
     print("[Notch] Starting...", flush=True)
@@ -33,6 +35,8 @@ def main():
 
     app = QApplication(sys.argv)
     app.setApplicationName("Notch")
+    if hasattr(app, "setDesktopFileName"):
+        app.setDesktopFileName(APP_ID)
     app.setStyle("Fusion")
 
     # ── Default font ─────────────────────────────────────────────────
