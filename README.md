@@ -6,7 +6,7 @@
   **Local Offline Teleprompter**
 
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-  [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Mac-lightgrey)](https://github.com/SultanAlshehhi/Notch)
+  [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://github.com/SultanAlshehhi/Notch)
   [![Python](https://img.shields.io/badge/python-3.8+-yellow.svg)](https://www.python.org/downloads/)
 
   <p>
@@ -40,12 +40,20 @@
 
 ## 🚀 Installation
 
-### Windows / macOS
-```powershell
+### Windows / macOS / Linux
+```bash
 python run.py
 ```
 
 *On the first run, Notch will automatically install required dependencies.*
+
+Optional on Linux with Nix:
+
+```bash
+nix run .#notch
+```
+
+*The Nix package includes the local speech model and supports x86_64 + aarch64 Linux.*
 
 ---
 
