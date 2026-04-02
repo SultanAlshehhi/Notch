@@ -298,6 +298,33 @@ class _RoundedMenu(QMenu):
         except Exception:
             pass
 
+    def _is_visible_body_hit(self, pos: QPoint) -> bool:
+        path = QPainterPath()
+        path.addRoundedRect(QRectF(self.rect()), self._radius, self._radius)
+        return path.contains(QPointF(pos))
+
+    def _should_swallow_click(self, pos: QPoint) -> bool:
+        if not self._is_visible_body_hit(pos):
+            return False
+        action = self.actionAt(pos)
+        return action is None or not action.isEnabled() or action.isSeparator()
+
+    def mousePressEvent(self, event):
+        # Keep the popup open when users click menu padding/background or passive widget rows.
+        if event.button() == Qt.LeftButton and self._should_swallow_click(event.pos()):
+            self.setActiveAction(None)
+            event.accept()
+            return
+        super().mousePressEvent(event)
+
+    def mouseReleaseEvent(self, event):
+        # QMenu normally closes on release; swallow releases on non-dismissive areas.
+        if event.button() == Qt.LeftButton and self._should_swallow_click(event.pos()):
+            self.setActiveAction(None)
+            event.accept()
+            return
+        super().mouseReleaseEvent(event)
+
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
