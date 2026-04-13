@@ -85,4 +85,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jpomykala/notchprompter&type=Date)](https://www.star-history.com/#jpomykala/notchprompter&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=SultanAlshehhi/Notch&type=Date)](https://www.star-history.com/#SultanAlshehhi/Notch&Date)
