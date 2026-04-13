@@ -1,100 +1,81 @@
-<div align="center">
-
-  <img src="/assets/Notch_Clear_1.png" alt="Notch Logo" width="120" />
-
-  # Notch
-  **Local Offline Teleprompter**
-
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-  [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Mac-lightgrey)](https://github.com/SultanAlshehhi/Notch)
-  [![Python](https://img.shields.io/badge/python-3.8+-yellow.svg)](https://www.python.org/downloads/)
-
-  <p>
-    <b>A privacy-first teleprompter that listens to your voice.</b><br>
-    Pins to the top of your screen. Scrolls when you speak. Pauses when you stop.<br>
-    <i>No Cloud. No API Keys. 100% Offline.</i>
+<p align="center">
+  <p align="center">
+    <img width="150" height="150" src="/assets/Notch_Clear_1.png" alt="Notch Logo">
   </p>
+  <h1 align="center"><b>Notch</b></h1>
+  <p align="center">
+    A local, offline teleprompter that follows your voice.
+    <br />
+    Built for creators, presenters, interviews, meetings, and live delivery.
+    <br />
+    <br />
+    <b>Downloads for </b>
+    <a href="https://socia.ae/products/notch">macOS & Windows</a>
+    <br />
+  </p>
+</p>
+<br/>
 
-  <!-- Demo video preview -->
+<p align="center">
   <a href="https://www.youtube.com/watch?v=8LaDcjB6gCM">
-    <img src="https://img.youtube.com/vi/8LaDcjB6gCM/maxresdefault.jpg" alt="Watch the Notch demo on YouTube" width="720" />
+    <img src="https://img.youtube.com/vi/8LaDcjB6gCM/maxresdefault.jpg" alt="Watch the Notch demo on YouTube" width="900" />
   </a>
+</p>
 
-</div>
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Mac-lightgrey)](https://socia.ae/products/notch)
 
 
+Notch is a desktop teleprompter that stays pinned near your camera and scrolls as you speak. It is designed to feel natural on calls, recordings, presentations, and live takes, with smooth motion, fast setup, and fully local processing.
 
+No cloud. No API keys. No uploading your script or voice.
 
 ---
 
-## ⚡ Features
+## Features
 
 | Feature | Description |
 | :--- | :--- |
-| 🎙️ **Voice Activation** | The script scrolls automatically as you speak and pauses when you stop. |
-| 🔒 **Privacy First** | All audio processing is local. Your voice data never leaves your machine. |
-| 📌 **Always on Top** | Designed as a slim overlay to sit near your webcam. |
-| 🎚️ **Manual Control** | Toggle scrolling with **Space** or adjust speed manually. |
-| 🎨 **Smart Highlighting** | Spoken words light up; future text remains dimmed for focus. |
-| ⚙️ **Audio Tuning** | Built-in Noise Gate, Input Gain, and VU Meter for any environment. |
+| **Voice follow** | Scrolls with your speech so the script moves when you talk and settles when you pause. |
+| **Invisible in capture workflows** | Built to stay out of screen recordings and video calls while you present. |
+| **Smooth reading motion** | Uses tuned spring-based scrolling so movement feels natural and easy to track. |
+| **Offline speech processing** | Runs locally without sending your script or voice to the cloud. |
+| **Manual mode** | Lets you run the teleprompter at a fixed pace when you want full control. |
+| **Always on top** | Stays near your webcam so your eyeline remains more natural on camera. |
+| **Document import** | Load `.txt`, `.pdf`, or `.docx` files from the menu or drag them directly onto Notch. |
 
 ---
 
-## 🚀 Installation
+## Use cases
 
-### Windows / macOS
-```powershell
-python run.py
-```
-
-*On the first run, Notch will automatically install required dependencies.*
-
----
-
-## 🎮 Usage Guide
-
-**1. Load a Script**
-Drag and drop any `.txt` file directly onto the Notch window.
-
-**2. Select Mode**
-Right-click the window to access the menu:
-*   **Notch Mode (Auto):** The microphone drives the scroll speed.
-*   **Manual Mode:** Scroll runs on a timer. Press **Space** to start/stop.
-
-**3. Adjust Settings**
-If the scrolling is too sensitive or not sensitive enough:
-1.  Open **Settings**.
-2.  Adjust the **Noise Gate**.
-    *   *High Gate:* Filters out background noise (requires louder speech).
-    *   *Low Gate:* Detects whispers (more sensitive).
-
-### Keyboard Shortcuts
-
-| Key | Action |
-| :--- | :--- |
-| <kbd>Space</kbd> | Toggle scrolling (Manual Mode) |
-| <kbd>Esc</kbd> | Close Application |
+- **Presentations**: Keep your delivery smooth without looking down at notes.
+- **Video recording**: Read scripts naturally while keeping your eyes close to the camera.
+- **Meetings and demos**: Stay on message with key talking points always in view.
+- **Interviews and podcasts**: Track questions, intros, and transitions without losing flow.
+- **Live streaming**: Follow prepared segments with a cleaner, more confident delivery.
 
 ---
 
-<details>
-<summary>📂 <b>Developer: Directory Structure</b> (Click to expand)</summary>
+## How it works
 
-```text
-Notch/
-├── run.py               # Run Notch (installs deps on first run)
-├── main.py              # Application Entry Point
-├── ui_overlay.py        # GUI & Overlay Logic
-├── audio_worker.py      # Audio Processing & VAD
-├── matching_engine.py   # Text Alignment Algorithms
-├── settings_dialog.py   # Configuration UI
-├── requirements.txt     # Dependencies
-└── assets/              # Images for README only
-```
-</details>
+1. Double-click Notch to open the editor, paste your script, or load a `.txt`, `.pdf`, or `.docx` document from the menu.
+2. Minimize back into the pill and position Notch near your webcam.
+3. Choose between Voice mode and Manual mode from the settings menu.
+4. Use the settings menu any time to adjust font, theme, opacity, microphone, notes, and other presentation settings.
+
+### Modes
+
+- **Voice mode**: Voice Follow stays active while you speak, helping the script track your delivery.
+- **Manual mode**: Scroll at a controlled pace when you prefer a fixed rhythm instead of speech-driven movement.
 
 ---
 
-## 📄 License
+## Privacy
+
+Notch is built for local-first use. Audio processing happens on your machine, and the app is designed around offline teleprompting rather than cloud transcription workflows.
+
+---
+
+## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
