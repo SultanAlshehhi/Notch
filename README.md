@@ -2,7 +2,7 @@
   <p align="center">
     <img width="150" height="150" src="/assets/Notch_Clear_1.png" alt="Notch Logo">
   </p>
-  <h1 align="center"><b>Notch</b></h1>
+  <h1 align="center"><b>Notch - Smart Teleprompter for macOS & Windows</b></h1>
   <p align="center">
     A local, offline teleprompter that follows your voice.
     <br />
@@ -21,7 +21,7 @@
 
 
 <p align="center">
-  <img src="./Cap%202026-04-13%20at%2021.45.59.gif" alt="Notch demo GIF" width="900" />
+  <img src="./Notch.gif" alt="Notch demo GIF" width="900" />
 </p>
 
 How to Use Notch: https://www.youtube.com/watch?v=8LaDcjB6gCM
@@ -80,3 +80,9 @@ Notch is built for local-first use. Audio processing happens on your machine, an
 ## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jpomykala/notchprompter&type=Date)](https://www.star-history.com/#jpomykala/notchprompter&Date)
