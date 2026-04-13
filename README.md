@@ -15,8 +15,10 @@
     <i>No Cloud. No API Keys. 100% Offline.</i>
   </p>
 
-   <!-- Auto-playing demo GIF -->
-![Notch Demo](assets/NotchDemo.gif)
+  <!-- Demo video preview -->
+  <a href="https://www.youtube.com/watch?v=8LaDcjB6gCM">
+    <img src="https://img.youtube.com/vi/8LaDcjB6gCM/maxresdefault.jpg" alt="Watch the Notch demo on YouTube" width="720" />
+  </a>
 
 </div>
 
