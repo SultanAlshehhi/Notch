@@ -16,14 +16,15 @@
 </p>
 <br/>
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Mac-lightgrey)](https://socia.ae/products/notch)
+
+
 <p align="center">
   <a href="https://www.youtube.com/watch?v=8LaDcjB6gCM">
     <img src="https://img.youtube.com/vi/8LaDcjB6gCM/maxresdefault.jpg" alt="Watch the Notch demo on YouTube" width="900" />
   </a>
 </p>
-
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Mac-lightgrey)](https://socia.ae/products/notch)
 
 
 Notch is a desktop teleprompter that stays pinned near your camera and scrolls as you speak. It is designed to feel natural on calls, recordings, presentations, and live takes, with smooth motion, fast setup, and fully local processing.
