@@ -21,10 +21,10 @@
 
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=8LaDcjB6gCM">
-    <img src="https://img.youtube.com/vi/8LaDcjB6gCM/maxresdefault.jpg" alt="Watch the Notch demo on YouTube" width="900" />
-  </a>
+  <img src="./Cap%202026-04-13%20at%2021.45.59.gif" alt="Notch demo GIF" width="900" />
 </p>
+
+How to Use Notch: https://www.youtube.com/watch?v=8LaDcjB6gCM
 
 
 Notch is a desktop teleprompter that stays pinned near your camera and scrolls as you speak. It is designed to feel natural on calls, recordings, presentations, and live takes, with smooth motion, fast setup, and fully local processing.
